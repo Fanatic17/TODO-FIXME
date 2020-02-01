@@ -1,29 +1,43 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.EventSystems;
+using System.Collections;
 
 public class NewBehaviourScript : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    private bool mouseDown = false;
+    private Vector3 startMousePos;
+    private Vector3 startPos;
+
+    public void OnMouseDown()
     {
-        
+        //Debug.Log("OnPointerDown");
+        mouseDown = true;
+        startPos = transform.position;
+        startMousePos = Input.mousePosition;
     }
 
-    // Update is called once per frame
+    public void OnMouseUp()
+    {
+        mouseDown = false;
+    }
+
+
     void Update()
     {
-        if (Input.touchCount > 0)
+        if (mouseDown)
         {
-            Touch touch = Input.GetTouch(0); // get first touch since touch count is greater than zero
-
-            if (touch.phase == TouchPhase.Stationary || touch.phase == TouchPhase.Moved)
-            {
-                // get the touch position from the screen touch to world point
-                Vector3 touchedPos = Camera.main.ScreenToWorldPoint(new Vector3(touch.position.x, touch.position.y, 10));
-                // lerp and set the position of the current object to that of the touch, but smoothly over time.
-                transform.position = Vector3.Lerp(transform.position, touchedPos, Time.deltaTime);
-            }
+            Vector3 currentPos = Input.mousePosition;
+            Vector3 diff = currentPos - startMousePos;
+            Vector3 pos = startPos + diff /30;
+            transform.position = pos;
         }
+    }
+
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("Pippo");
     }
 }
