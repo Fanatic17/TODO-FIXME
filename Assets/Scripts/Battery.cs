@@ -21,4 +21,10 @@ public class Battery : MonoBehaviour
         Debug.Log("Pippo");
     }
 
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        Debug.Log("Pluto");
+    }
+
 }
