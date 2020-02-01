@@ -2,8 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Battery : MonoBehaviour
+public class batteryChargingButton : MonoBehaviour
 {
+    public GameController controller;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,15 +17,10 @@ public class Battery : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    void OnMouseDown()
     {
-        Debug.Log("Pippo");
+        controller.Charge();
     }
 
-
-    private void OnTriggerExit2D(Collider2D other)
-    {
-        Debug.Log("Pluto");
-    }
 
 }

@@ -12,7 +12,6 @@ public class NewBehaviourScript : MonoBehaviour
 
     public void OnMouseDown()
     {
-        //Debug.Log("OnPointerDown");
         mouseDown = true;
         startPos = transform.position;
         startMousePos = Input.mousePosition;

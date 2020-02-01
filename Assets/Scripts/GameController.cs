@@ -4,7 +4,12 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
-    public GameObject button1;
+    public BatterySlot batterySlot1;
+    public BatterySlot batterySlot2;
+    public ActualBattery battery1;
+    public ActualBattery battery2;
+    public Light led1;
+
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +20,32 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+
+    public void SetBattery()
+    {
+        if (batterySlot1.status && batterySlot2.status && battery1.charge > 0 && battery2.charge > 0)
+        {
+            led1.enabled = true;
+        } else
+        {
+            led1.enabled = false;
+        }
+    }
+
+    public void Charge()
+    {
+        if (battery1.charging)
+        {
+            battery1.charge += 5;
+        }
+        else
+        {
+            if (battery2.charging)
+            {
+                battery2.charge += 5;
+            }
+        }
     }
 }
