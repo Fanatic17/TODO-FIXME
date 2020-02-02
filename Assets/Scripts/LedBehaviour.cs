@@ -32,6 +32,8 @@ public class LedBehaviour : MonoBehaviour
 
     public void toggleSwitch()
     {
+        GetComponent<AudioSource>().Play();
+    
         if (switchButton == true)
         {
             switchButton = false;

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class GameController : MonoBehaviour
 {
@@ -9,7 +11,11 @@ public class GameController : MonoBehaviour
     public ActualBattery battery1;
     public ActualBattery battery2;
     public bool puzzleActive;
-
+    public LedScript led1;
+    public LedScript led2;
+    public LedScript led3;
+    public LedScript led4;
+    public LedScript led5;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +26,11 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(led1.colore && led2.colore && led3.colore && led4.colore && led5.colore)
+        {
+            GetComponent<AudioSource>().Play();
+            Invoke("ChangeScene", 5);
+        }
 
     }
 
@@ -47,6 +58,12 @@ public class GameController : MonoBehaviour
                 battery2.charge += 5;
             }
         }
+    }
+
+    public void ChangeScene()
+    {
+        SceneManager.LoadScene("Credits");
+
     }
 
 }
