@@ -18,7 +18,7 @@ public class LedScript : MonoBehaviour
     void Update()
     {
  
-        if (true)//controller.puzzleActive)
+        if (controller.puzzleActive)
         {
             if (colore)
             {
@@ -38,8 +38,8 @@ public class LedScript : MonoBehaviour
 
     public void toggle()
     {
-        Debug.log("prova");
-        if (true)//controller.puzzleActive)
+        Debug.Log("prova");
+        if (controller.puzzleActive)
         {
             colore = !colore;
             
