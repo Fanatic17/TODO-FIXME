@@ -8,7 +8,6 @@ public class GameController : MonoBehaviour
     public BatterySlot batterySlot2;
     public ActualBattery battery1;
     public ActualBattery battery2;
-    public Light led1;
     public bool puzzleActive;
 
 
@@ -28,11 +27,9 @@ public class GameController : MonoBehaviour
     {
         if (batterySlot1.status && batterySlot2.status && battery1.charge > 0 && battery2.charge > 0)
         {
-            led1.enabled = true;
             puzzleActive = true;
         } else
         {
-            led1.enabled = false;
             puzzleActive = false;
         }
     }
