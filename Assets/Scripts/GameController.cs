@@ -16,6 +16,7 @@ public class GameController : MonoBehaviour
     public LedScript led3;
     public LedScript led4;
     public LedScript led5;
+    public bool gameEnded = false;
 
     // Start is called before the first frame update
     void Start()
@@ -28,7 +29,7 @@ public class GameController : MonoBehaviour
     {
         if(led1.colore && led2.colore && led3.colore && led4.colore && led5.colore)
         {
-            GetComponent<AudioSource>().Play();
+            SuccessAudio();
             Invoke("ChangeScene", 5);
         }
 
@@ -63,6 +64,16 @@ public class GameController : MonoBehaviour
     public void ChangeScene()
     {
         SceneManager.LoadScene("Credits");
+    }
+
+    public void SuccessAudio()
+    {
+        if (!gameEnded)
+        {
+            GetComponent<AudioSource>().Play();
+            gameEnded = true;
+
+        }
     }
 
 }
