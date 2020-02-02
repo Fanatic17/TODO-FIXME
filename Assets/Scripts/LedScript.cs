@@ -38,7 +38,6 @@ public class LedScript : MonoBehaviour
 
     public void toggle()
     {
-        Debug.Log("prova");
         if (controller.puzzleActive)
         {
             colore = !colore;
