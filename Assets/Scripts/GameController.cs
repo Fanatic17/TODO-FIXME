@@ -36,7 +36,7 @@ public class GameController : MonoBehaviour
 
     public void Charge()
     {
-        if (battery1.charging)
+        if (battery1.charging && battery1.charge < 100)
         {
             battery1.charge += 5;
         }
