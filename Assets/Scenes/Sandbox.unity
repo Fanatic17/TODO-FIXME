@@ -526,6 +526,7 @@ GameObject:
   m_Component:
   - component: {fileID: 331269859}
   - component: {fileID: 331269858}
+  - component: {fileID: 331269860}
   m_Layer: 0
   m_Name: New Sprite (1)
   m_TagString: Untagged
@@ -596,6 +597,20 @@ Transform:
   m_Father: {fileID: 312426511}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &331269860
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 331269857}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756caf9fbc42754e90f31a1b9066073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1825259919}
+  colore: 0
 --- !u!1 &433144409
 GameObject:
   m_ObjectHideFlags: 0
@@ -765,6 +780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 537859970}
   - component: {fileID: 537859969}
+  - component: {fileID: 537859971}
   m_Layer: 0
   m_Name: New Sprite (2)
   m_TagString: Untagged
@@ -835,6 +851,20 @@ Transform:
   m_Father: {fileID: 312426511}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &537859971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 537859968}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756caf9fbc42754e90f31a1b9066073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1825259919}
+  colore: 0
 --- !u!1 &740806875
 GameObject:
   m_ObjectHideFlags: 0
@@ -1149,6 +1179,7 @@ GameObject:
   - component: {fileID: 1037452326}
   - component: {fileID: 1037452325}
   - component: {fileID: 1037452328}
+  - component: {fileID: 1037452324}
   m_Layer: 0
   m_Name: Puzzlebutton2
   m_TagString: Untagged
@@ -1156,6 +1187,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1037452324
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037452323}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a45c26e5b4ae394aadb504e5e0cb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 331269860}
+  l2: {fileID: 1173052321}
+  l3: {fileID: 1421186945}
 --- !u!61 &1037452325
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1267,6 +1313,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1173052320}
   - component: {fileID: 1173052319}
+  - component: {fileID: 1173052321}
   m_Layer: 0
   m_Name: New Sprite (3)
   m_TagString: Untagged
@@ -1337,6 +1384,20 @@ Transform:
   m_Father: {fileID: 312426511}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1173052321
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1173052318}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756caf9fbc42754e90f31a1b9066073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1825259919}
+  colore: 0
 --- !u!1 &1261902692
 GameObject:
   m_ObjectHideFlags: 0
@@ -1604,6 +1665,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1421186944}
   - component: {fileID: 1421186943}
+  - component: {fileID: 1421186945}
   m_Layer: 0
   m_Name: New Sprite (4)
   m_TagString: Untagged
@@ -1674,6 +1736,20 @@ Transform:
   m_Father: {fileID: 312426511}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1421186945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421186942}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756caf9fbc42754e90f31a1b9066073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1825259919}
+  colore: 0
 --- !u!1 &1461716972
 GameObject:
   m_ObjectHideFlags: 0
@@ -1777,6 +1853,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1477664847}
   - component: {fileID: 1477664846}
+  - component: {fileID: 1477664848}
   m_Layer: 0
   m_Name: New Sprite
   m_TagString: Untagged
@@ -1849,6 +1926,20 @@ Transform:
   m_Father: {fileID: 312426511}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1477664848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1477664845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1756caf9fbc42754e90f31a1b9066073, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 1825259919}
+  colore: 0
 --- !u!1 &1517839816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1952,6 +2043,7 @@ GameObject:
   - component: {fileID: 1525664504}
   - component: {fileID: 1525664503}
   - component: {fileID: 1525664506}
+  - component: {fileID: 1525664502}
   m_Layer: 0
   m_Name: Puzzlebutton1
   m_TagString: Untagged
@@ -1959,6 +2051,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1525664502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1525664501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a45c26e5b4ae394aadb504e5e0cb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 1477664848}
+  l2: {fileID: 331269860}
+  l3: {fileID: 537859971}
 --- !u!61 &1525664503
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2365,6 +2472,7 @@ GameObject:
   - component: {fileID: 1962777408}
   - component: {fileID: 1962777407}
   - component: {fileID: 1962777410}
+  - component: {fileID: 1962777406}
   m_Layer: 0
   m_Name: Puzzlebutton3
   m_TagString: Untagged
@@ -2372,6 +2480,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &1962777406
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962777405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a45c26e5b4ae394aadb504e5e0cb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 1477664848}
+  l2: {fileID: 537859971}
+  l3: {fileID: 1421186945}
 --- !u!61 &1962777407
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2576,6 +2699,7 @@ GameObject:
   - component: {fileID: 2136992960}
   - component: {fileID: 2136992959}
   - component: {fileID: 2136992962}
+  - component: {fileID: 2136992958}
   m_Layer: 0
   m_Name: Puzzlebutton4
   m_TagString: Untagged
@@ -2583,6 +2707,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &2136992958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2136992957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a45c26e5b4ae394aadb504e5e0cb7fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  l1: {fileID: 1477664848}
+  l2: {fileID: 537859971}
+  l3: {fileID: 1173052321}
 --- !u!61 &2136992959
 BoxCollider2D:
   m_ObjectHideFlags: 0
