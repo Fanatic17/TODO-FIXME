@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuzzleButtonScript : MonoBehaviour
+public class LedBehaviour : MonoBehaviour
 {
-    public Light l1;
-    public Light l2;
-    public Light l3;
+    public LedScript l1;
+    public LedScript l2;
+    public LedScript l3;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,4 +18,12 @@ public class PuzzleButtonScript : MonoBehaviour
     {
         
     }
+
+    void OnMouseDown()
+    {
+        l1.toggle();
+        l2.toggle();
+        l3.toggle();
+    }
+
 }

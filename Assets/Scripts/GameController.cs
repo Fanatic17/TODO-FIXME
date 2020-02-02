@@ -9,6 +9,7 @@ public class GameController : MonoBehaviour
     public ActualBattery battery1;
     public ActualBattery battery2;
     public Light led1;
+    public bool puzzleActive;
 
 
     // Start is called before the first frame update
@@ -28,9 +29,11 @@ public class GameController : MonoBehaviour
         if (batterySlot1.status && batterySlot2.status && battery1.charge > 0 && battery2.charge > 0)
         {
             led1.enabled = true;
+            puzzleActive = true;
         } else
         {
             led1.enabled = false;
+            puzzleActive = false;
         }
     }
 
@@ -48,4 +51,5 @@ public class GameController : MonoBehaviour
             }
         }
     }
+
 }
