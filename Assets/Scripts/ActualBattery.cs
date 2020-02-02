@@ -8,6 +8,10 @@ public class ActualBattery : MonoBehaviour
     public bool discharging;
     public bool charging;
     public GameController controller;
+    public Sprite battFull;
+    public Sprite battYellow;
+    public Sprite battOrange;
+    public Sprite battRed;
     // Start is called before the first frame update
     void Start()
     {
@@ -18,7 +22,21 @@ public class ActualBattery : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log(charge + this.ToString());
+        if(charge < 15)
+        this.GetComponent<SpriteRenderer>().sprite = battRed;
+        return;
+
+        if (charge < 30)
+            this.GetComponent<SpriteRenderer>().sprite = battOrange;
+        return;
+
+        if (charge < 60)
+            this.GetComponent<SpriteRenderer>().sprite = battYellow;
+        return;
+ 
+        this.GetComponent<SpriteRenderer>().sprite = battFull;
+        return;
+
     }
 
     private void DecrementCharge()

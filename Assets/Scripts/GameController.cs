@@ -42,7 +42,7 @@ public class GameController : MonoBehaviour
         }
         else
         {
-            if (battery2.charging)
+            if (battery2.charging && battery2.charge < 100)
             {
                 battery2.charge += 5;
             }
