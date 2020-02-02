@@ -29,7 +29,7 @@ public class NewBehaviourScript : MonoBehaviour
         {
             Vector3 currentPos = Input.mousePosition;
             Vector3 diff = currentPos - startMousePos;
-            Vector3 pos = startPos + diff /22;
+            Vector3 pos = startPos + diff /75;
             transform.position = pos;
         }
     }

@@ -5,6 +5,9 @@ using UnityEngine;
 public class batteryChargingButton : MonoBehaviour
 {
     public GameController controller;
+    public Sprite spriteUp;
+    public Sprite spriteDown;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +23,12 @@ public class batteryChargingButton : MonoBehaviour
     void OnMouseDown()
     {
         controller.Charge();
+        this.GetComponent<SpriteRenderer>().sprite = spriteDown;
+        GetComponent<AudioSource>().Play();
     }
 
-
+    void OnMouseUp()
+    {
+        this.GetComponent<SpriteRenderer>().sprite = spriteUp;
+    }
 }
