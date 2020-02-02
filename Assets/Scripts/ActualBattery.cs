@@ -22,17 +22,23 @@ public class ActualBattery : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(charge < 15)
-        this.GetComponent<SpriteRenderer>().sprite = battRed;
-        return;
+        if (charge < 1)
+        {
+            this.GetComponent<SpriteRenderer>().sprite = battRed;
+            return;
+        }
 
         if (charge < 30)
+        {
             this.GetComponent<SpriteRenderer>().sprite = battOrange;
-        return;
+            return;
+        }
 
-        if (charge < 60)
+        if (charge < 50)
+        {
             this.GetComponent<SpriteRenderer>().sprite = battYellow;
-        return;
+            return;
+        }
  
         this.GetComponent<SpriteRenderer>().sprite = battFull;
         return;
