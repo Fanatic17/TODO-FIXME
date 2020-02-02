@@ -2,13 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PuzzleButton : MonoBehaviour
+public class LedScript : MonoBehaviour
 {
-    public Light l1;
-    public Light l2;
-    public Light l3;
-    
+    public GameController controller;
     // Start is called before the first frame update
+
+
     void Start()
     {
         
@@ -18,5 +17,12 @@ public class PuzzleButton : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void Toggle()
+    {
+        if (controller.puzzleActive)
+        {
+        }
     }
 }
