@@ -5,6 +5,7 @@ using UnityEngine;
 public class LedScript : MonoBehaviour
 {
     public GameController controller;
+    public bool colore = false;
     // Start is called before the first frame update
 
 
@@ -16,13 +17,19 @@ public class LedScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
     }
 
-    public void Toggle()
+    public void toggle()
     {
-        if (controller.puzzleActive)
+        if (true)//controller.puzzleActive)
         {
+            if (colore==false)
+            {
+                colore = true;
+                
+            } else { 
+            colore=false;
+            }
         }
     }
 }
