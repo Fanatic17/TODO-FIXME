@@ -17,19 +17,32 @@ public class LedScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+ 
+        if (true)//controller.puzzleActive)
+        {
+            if (colore)
+            {
+                GetComponent<SpriteRenderer>().color = Color.green;
+            }
+            else
+            {
+                GetComponent<SpriteRenderer>().color = Color.red;
+            }
+        }
+        else
+        {
+            GetComponent<SpriteRenderer>().color = Color.grey;
+        }
+
     }
 
     public void toggle()
     {
+        Debug.log("prova");
         if (true)//controller.puzzleActive)
         {
-            if (colore==false)
-            {
-                colore = true;
-                
-            } else { 
-            colore=false;
-            }
+            colore = !colore;
+            
         }
     }
 }
