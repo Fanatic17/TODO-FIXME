@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sandbox.unity
     guid: 016241bbfa512c843a43364b949bed04
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: 8e21f4be04b23964da7440fd565ccd27
   m_configObjects: {}

@@ -62,8 +62,7 @@ public class GameController : MonoBehaviour
 
     public void ChangeScene()
     {
-        //SceneManager.LoadScene("Credits");
-
+        SceneManager.LoadScene("Credits");
     }
 
 }
