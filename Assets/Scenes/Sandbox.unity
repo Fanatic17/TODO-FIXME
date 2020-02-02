@@ -2341,7 +2341,6 @@ MonoBehaviour:
   batterySlot2: {fileID: 1793559356}
   battery1: {fileID: 1261902698}
   battery2: {fileID: 433144415}
-  led1: {fileID: 0}
   puzzleActive: 0
 --- !u!1 &1962777405
 GameObject:
@@ -2550,13 +2549,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036742549}
-  m_LocalRotation: {x: 0.042414438, y: -0.05826412, z: -0.97983074, w: 0.18638149}
+  m_LocalRotation: {x: 0.10988569, y: 0.31742007, z: -0.92882043, w: 0.1564042}
   m_LocalPosition: {x: 0.12, y: -1.4, z: -4.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: -5.6450005, y: -6.0470004, z: -158.162}
+  m_LocalEulerAnglesHint: {x: 38.611, y: -7.7100005, z: -163.58801}
 --- !u!1 &2136992957
 GameObject:
   m_ObjectHideFlags: 0
